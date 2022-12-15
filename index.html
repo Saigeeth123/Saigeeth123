@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(2, 16, 30);
+        }
+        h1{
+            margin: 25px 0px 0px 0px;
+            color: rgb(225, 30, 30);
+            font-style: oblique;
+        }
+        h2{
+            color: rgba(105, 194, 232, 0.696);
+            font-style: italic;
+        }
+        h3{
+            color: rgb(72, 176, 138);
+        }
+        label{
+            color: rgb(162, 217, 66);
+        }
+    </style>
+</head>
+<body>
+    <marquee scrollamount="5"><center><h1>Please choose a course you want to join in MRU</h1></center></marquee>
+    <form action="THANK_YOU_PAGE.html" method="get">
+        <h2>COURSES OFFERED AT MRU</h2>
+        <label for="FSWD">FULLSTACK :</label>
+        <input id="FSWD" type="radio" name="loc" value="FULLSTACK">
+
+        <label for="DS">DATASCIENCE :</label>
+        <input id="DS" type="radio" name="loc" value="DATASCIENCE">
+
+        <label for="DM">DIGITAL MARKETING :</label>
+        <input id="DM" type="radio" name="loc" value="DIGITAL MARKETING">
+
+        <h3>Please provide rating to the course</h3>
+        <select name="Rating">
+            <option value="Great">GREAT</option>
+            <option value="Good">GOOD</option>
+            <option value="Average">AVERAGE</option>
+            <option value="Satifactory">SATISFACTORY</option>
+            <option value="Poor">POOR</option>
+        </select>
+        <h3>Any other feed back</h3>
+        <textarea name="Your feedbback" rows="10" cols="100"></textarea>
+        <br>
+        <input type="submit" name=""value="submit" onclick="sp()">
+        <script>
+            function sp(){
+                alert('THANKYOU FOR REGISTERING')
+
+            }
+        </script>
+
+
+        
+
+    </form>
+</body>
+</html>
